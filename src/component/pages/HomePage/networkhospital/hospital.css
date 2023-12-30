@@ -1,0 +1,4 @@
+.hospital-slide img {
+  -webkit-user-drag: none !important;
+  user-drag: none !important;
+}

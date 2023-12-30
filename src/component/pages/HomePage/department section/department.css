@@ -1,0 +1,6 @@
+.department-card {
+  transform: rotateY(180deg);
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
