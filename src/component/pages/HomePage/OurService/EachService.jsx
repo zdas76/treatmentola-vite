@@ -1,5 +1,5 @@
 import React from "react";
-import {} from "react-router-dom";
+import { } from "react-router-dom";
 
 const EachService = ({ serviceName, serviceDescription, icon }) => {
   return (

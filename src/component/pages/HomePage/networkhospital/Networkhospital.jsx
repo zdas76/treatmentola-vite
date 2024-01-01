@@ -35,7 +35,7 @@ const Networkhospital = () => {
     },
   };
   return (
-    <section className="py-6 md:py-20 bg-blue-50">
+    <section className="py-6 md:py-20 bg-blue-50 text-center">
       <div className="container mx-auto">
         <h1 className="text-3xl md:text-5xl font-bold text-primary mb-10"> Network Hospital</h1>
         <Carousel

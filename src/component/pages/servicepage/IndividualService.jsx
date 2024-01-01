@@ -5,7 +5,7 @@ import ContactNowBtn from "../../ContactNowBtn";
 import serviceDetailimg from "../../../img/individualtreatment.jpg";
 import Faq from "./Faq";
 import Call from "../../directCall/Call";
-
+import React from "react";
 const IndividualService = () => {
   const { serviceId } = useParams();
   const serviceData = data.service;

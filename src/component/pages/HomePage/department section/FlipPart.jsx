@@ -7,7 +7,7 @@ const FlipPart = ({ dep_details, department_name, icon }) => {
       <div className={`p-2 flip-box shadow-xl bg-white duration-300 h-full ${isflip ? "department-card" : null} select-none pointer-events-none`}>
         {isflip ? (
           <div className="flip-back flex justify-center items-center h-full">
-            <p className="text-xl sm:font-semibold">{dep_details}</p>
+            <p className="text-xl sm:font-semibold text-center">{dep_details}</p>
           </div>
         ) : (
           <div className="box-front cursor-pointer flex justify-center items-center flex-col py-12">
