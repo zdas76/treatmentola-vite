@@ -8,7 +8,7 @@ const Counter = () => {
   return (
     <section className="py-10 bg-blue-50">
       <div className="max-w-[1200px] mx-auto">
-        <h1 className="text-3xl md:text-5xl font-bold text-primary">Achievements</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-primary text-center">Achievements</h1>
         <ScrollTrigger onEnter={() => setCounter(true)} onExit={() => setCounter(false)}>
           <div className="grid mt-8 mx-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
             {/* countries */}

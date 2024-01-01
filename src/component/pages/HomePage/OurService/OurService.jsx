@@ -13,7 +13,7 @@ const OurService = () => {
   }, []);
   return (
     <div className="my-10 max-w-[1200px] mx-auto">
-      <h1 className="text-3xl md:text-5xl font-bold text-primary">Our Services</h1>
+      <h1 className="text-3xl md:text-5xl font-bold text-primary text-center">Our Services</h1>
       <div className="md:mt-14 mt-5 grid xs:grid-cols-2 grid-cols-1 md:grid-cols-3 gap-3 md:gap-8 lg:grid-cols-4">
         {service.map((service) => (
           <Link to={`service/${service.service_id}`} key={service.id}>
@@ -23,7 +23,7 @@ const OurService = () => {
       </div>
       <Link
         to="contact-now"
-        className="max-w-[250px] block mx-auto font-bold w-full p-3 bg-primary mt-10 rounded-full text-white text-xl hover:bg-transparent hover:text-black hover:outline outline-1 outline-green-500 duration-150"
+        className="max-w-[250px] text-center block mx-auto font-bold w-full p-3 bg-primary mt-10 rounded-full text-white text-xl hover:bg-transparent hover:text-black hover:outline outline-1 outline-green-500 duration-150"
       >
         Contact Now
       </Link>
