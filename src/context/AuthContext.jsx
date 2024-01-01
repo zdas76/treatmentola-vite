@@ -1,22 +1,22 @@
-import { createContext, useEffect, useState } from "react";
-import React from "react";
-export const AuthContext = createContext(null);
+// import React, { createContext, useEffect, useState } from "react";
 
-export const AuthContextProvider = ({ children }) => {
-  const [admin, setAdmin] = useState({});
+// export const AuthContext = createContext();
 
-  const getAdmin = window.localStorage.getItem("admin-access");
+// export const AuthContextProvider = ({ children }) => {
+//   const [admin, setAdmin] = useState({});
 
-  useEffect(() => {
-    if (getAdmin) {
-      const data = JSON.parse(getAdmin);
-      setAdmin(data);
-    }
-  }, [getAdmin]);
+//   const getAdmin = window.localStorage.getItem("admin-access");
 
-  return (
-    <AuthContext.Provider value={{ admin, setAdmin }}>
-      {children}
-    </AuthContext.Provider>
-  );
-};
+//   useEffect(() => {
+//     if (getAdmin) {
+//       const data = JSON.parse(getAdmin);
+//       setAdmin(data);
+//     }
+//   }, [getAdmin]);
+
+//   return (
+//     <AuthContext.Provider value={{ admin, setAdmin }}>
+//       {children}
+//     </AuthContext.Provider>
+//   );
+// };

@@ -1,3 +1,4 @@
+import React from "react";
 import data from "../../data.json";
 import { AiFillStar } from "react-icons/ai";
 
