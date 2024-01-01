@@ -49,15 +49,15 @@ const AddDoctors = () => {
     doctorName: Yup.string().min(3, "too short").max(30, "too Long").required("Required"),
     designation: Yup.string().min(4, "too short").max(50, "too long").required("Required"),
     academicBg: Yup.string().min(4, "too short").max(50, "too long").required("Required"),
-    experience: Yup.number().min(1, "minimum Experience is 1 year").max(50, "too long").required("Required"),
+    experience: Yup.number().min(1, "minimum 1 year").max(50, "too long").required("Required"),
     expertise: Yup.string().min(4, "too short").max(50, "too long").required("Required"),
     awards: Yup.string().min(4, "too short").max(50, "too long").required("Required"),
     presentWorkStation: Yup.string().min(4, "too short").max(50, "too long").required("Required"),
     previousWorkStation: Yup.string().min(4, "too short").max(50, "too long").required("Required"),
-    doctorsPhone: Yup.number().min(11, "minimum should 11 digit").max(14, "too long").required("Required"),
+    doctorsPhone: Yup.string().min(11, "minimum 11 digit").max(14, "too long").required("Required"),
     doctorsEmail: Yup.string().email('Invalid email').required('Required'),
     contactPersonName: Yup.string().min(4, "too short").max(50, "too long").required("Required"),
-    contactPersonNumber: Yup.number().min(11, "minimum should 11 digit").max(14, "too long").required("Required"),
+    contactPersonNumber: Yup.string().min(11, "minimum 11 digit").max(14, "too long").required("Required"),
     servingCountry: Yup.string().required("Required"),
     servingState: Yup.string().required("Required"),
     serveingCity: Yup.string().required("Required"),
@@ -88,16 +88,16 @@ const AddDoctors = () => {
     publication: ""
   }
   // handle submit data form the form
-  const onSubmit = values => {
-    console.log(values)
-  }
+  // const onSubmit = values => {
+  //   console.log(values)
+  // }
 
   return (
     <div className="p-3">
       <h1 className="font-bold text-2xl text-left">Doctor Data</h1>
       <div className="rounded mt-4 bg-gray-100 max-w-[70%]">
         <div className="text-whit first-col p-4">
-          <Formik initialValues={initialValue} validationSchema={doctorsDataSchema} onSubmit={onSubmit}>
+          <Formik initialValues={initialValue} validationSchema={doctorsDataSchema} onSubmit={onsubmit}>
             <Form className="text-left">
               <div className="customer-registration text-black mb-10 flex md:gap-x-4 justify-between">
                 <h4 className="font-semibold ">Doctor ID : {customId}</h4>
