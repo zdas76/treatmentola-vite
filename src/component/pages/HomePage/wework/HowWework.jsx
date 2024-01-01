@@ -9,16 +9,16 @@ import ReactPlayer from "react-player";
 
 const HowWework = () => {
   return (
-    <div className="py-8">
-      <div className="bg-blue-50 py-2">
+    <section className="py-10">
+      <div className="bg-blue-50 py-10">
         <div className="video-section max-w-[900px] mb-8 py-5 mx-auto">
           <ReactPlayer url="https://www.youtube.com/watch?v=eXjYU1EDdhE" width="100%" height="450px" muted={true} playing={true} controls={true} />
         </div>
       </div>
-      <div className="max-w-[1000px] mx-auto">
-        <h1 className="text-3xl md:text-5xl font-bold text-primary capitalize">How We Work</h1>
+      <div className="max-w-[1000px] mx-auto py-20">
+        <h1 className="text-3xl md:text-5xl font-bold text-primary capitalize pb-20 text-center">How We Work</h1>
 
-        <p className="capitalize md:text-4xl text-2xl leading-7 md:font-semibold md:text-center capitalize my-4">under one roof: Plan, travel, treatment</p>
+        <p className="capitalize md:text-4xl text-2xl leading-7 md:font-semibold md:text-center my-4">under one roof: Plan, travel, treatment</p>
         <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-items-center gap-x-2 gap-y-7 mt-10">
           <div className="flex flex-col items-center md:text-2xl md:leading-7 p-2">
             <span className="text-4xl md:text-7xl mb-2 block text-primary">
@@ -47,7 +47,7 @@ const HowWework = () => {
         </div>
         <ContactNowBtn />
       </div>
-    </div>
+    </section>
   );
 };
 

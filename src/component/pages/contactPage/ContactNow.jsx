@@ -26,18 +26,18 @@ const ContactNow = () => {
       reason
     }
 
-  try {
-      const result = await axios.post('/api/primaryusers/', 
-      
-      patient,
-      {
-        headers:{
-          'Content-Type': 'application/json;charset=UTF-8',
-          "Access-Control-Allow-Origin": "*",
+    try {
+      const result = await axios.post('/api/primaryusers/',
+
+        patient,
+        {
+          headers: {
+            'Content-Type': 'application/json;charset=UTF-8',
+            "Access-Control-Allow-Origin": "*",
+          }
         }
-      }
       )
-      console.log(result.data.data);  
+      console.log(result.data.data);
       let textName = result.data.data.name;
       Swal.fire({
         title: "Succes!",
@@ -46,7 +46,7 @@ const ContactNow = () => {
         confirmButtonText: "Close",
       });
 
-    }catch (err) {
+    } catch (err) {
       console.log(err);
     }
   };
@@ -109,7 +109,7 @@ const ContactNow = () => {
                       Phone Number
                       <input
                         required
-                        max-length="11"
+                        maxLength="11"
                         name="contact"
                         className="outline-none p-2 rounded-md w-full text-black my-4 sm:my-0"
                         type="number"
